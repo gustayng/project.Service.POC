@@ -1,0 +1,28 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AppSettings": {
+    "MSIClientID": "c681d94f-0fa7-4fd2-b7aa-30d211db32f4",
+    "ServiceBusConnectionString": "Endpoint=sb://ikea-servicebus-ordercreate.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=2GgpIOH2q41jOs9kg17vxXGVJLtNMQLlc+KYy2/SrRg=",
+    "CartCheckedOutTopicName": "CartCheckedOut",
+    "ShoppingTimedOutTopicName": "ShoppingTimedOut",
+    "Subscription": "CartServices",
+    "AllowedOrigins": [ "http://localhost:3000", "http://localhost:3001" ],
+    "KeyVaultUrl": "https://ikeakeyvault2.vault.azure.net/",
+    "RunAsMockService":  "true"
+  },
+  "ApplicationInsights": {
+    "ConnectionString": "InstrumentationKey=7d9c4939-b138-40ad-a446-dcb1dc22510e;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/",
+    "InstrumentationKey": "7d9c4939-b138-40ad-a446-dcb1dc22510e"
+  },
+  "ConnectionStrings": {
+    "CartServiceLocal": "Server=.;Database=Shopping;Trusted_Connection=True;",
+    "CartServiceIKEA": "Server=tcp:ikea-server.database.windows.net,1433;Initial Catalog=CartService;Persist Security Info=False;User ID=ikeauser;Password=Pass@word$$$$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+    "DBConnection": "Server=tcp:ikea-server.database.windows.net,1433;Initial Catalog=CartService;"
+  }
+}
