@@ -84,6 +84,7 @@ namespace Cloudstarter.Controllers
         public async Task<string> Ygge()
         {
             return "This is the PPPPPPPPPPPPPPPP";
+            mmm = 0;
         }
 
         /// <summary>
