@@ -83,7 +83,7 @@ namespace Cloudstarter.Controllers
         [HttpGet]
         public async Task<string> Ygge()
         {
-            return "Ygge Man San XXXX 12";
+            return "This is the guy";
         }
 
         /// <summary>
