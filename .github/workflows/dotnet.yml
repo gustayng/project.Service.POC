@@ -21,6 +21,6 @@ jobs:
       with:
         azcliversion: 2.30.0
         inlineScript: |
-          az webapp auth microsoft show --name app-ikea-github-access --resource-group IKEA
+          az group create -l northeurope -n GitHub
             
             
