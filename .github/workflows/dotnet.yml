@@ -21,6 +21,6 @@ jobs:
       with:
         azcliversion: 2.30.0
         inlineScript: |
-          az group create -l northeurope -n GitHub
+          az rest --method GET --uri 'https://graph.microsoft.com/v1.0/applications/c8701cf3-3bbe-4c49-9359-b43433f29ec2' --query spa.redirectUris
             
             
