@@ -23,8 +23,6 @@ jobs:
         azcliversion: 2.30.0
         inlineScript: |
           $existing = az rest --method GET --uri 'https://graph.microsoft.com/v1.0/applications/806214f1-fd05-45db-9175-76e6890c1767' --query spa.redirectUris
-          $existing += 'http://localhost:3000'
-          az rest --method PATCH --uri 'https://graph.microsoft.com/v1.0/applications/806214f1-fd05-45db-9175-76e6890c1767' --headers 'Content-Type=application/json' --body "{spa:{redirectUris:['http://localhost:3000']}}"
 
     - name: Update Redirect URL's
       uses: azure/CLI@v1
