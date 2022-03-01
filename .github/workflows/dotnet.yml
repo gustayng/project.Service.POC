@@ -27,8 +27,8 @@ jobs:
           echo "Fetched URL's"
           echo $existing
           echo "Adding new URL"
-          existing+=https://localhost:5000
-          echo "${existing[@]}"
+          ${existing/#\/]/\,https://localhost:5000]}
+          echo $existing
           echo "Updating URL's"
           az rest --method PATCH --uri 'https://graph.microsoft.com/v1.0/applications/806214f1-fd05-45db-9175-76e6890c1767' --headers 'Content-Type=application/json' --body "{spa:{redirectUris:$existing}}"
     - name: Update Redirect URL's
