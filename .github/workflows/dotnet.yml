@@ -14,13 +14,13 @@ jobs:
     steps:
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_365_SANBOX }}
        
     - name: Create Deployment Slot
       uses: azure/CLI@v1
       with:
         azcliversion: 2.30.0
         inlineScript: |
-          az rest --method GET --uri 'https://graph.microsoft.com/v1.0/applications/c8701cf3-3bbe-4c49-9359-b43433f29ec2' --query spa.redirectUris
+          az rest --method GET --uri 'https://graph.microsoft.com/v1.0/applications/e7e3379c-f6ea-4a4b-9cf0-8258f04f40c1' --query spa.redirectUris
             
             
