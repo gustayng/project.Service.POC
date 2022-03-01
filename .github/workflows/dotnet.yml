@@ -27,7 +27,7 @@ jobs:
           echo "Fetched URL's"
           echo $existing
           echo "Adding new URL"
-          existing=${existing//]/,https://localhost:5000]}
+          existing=${existing//]/,https://localhost:5000 ]}
 
           echo $existing
           echo "Updating URL's"
