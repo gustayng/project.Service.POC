@@ -11,6 +11,7 @@ namespace Cloudstarter.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        // Comment 1
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
