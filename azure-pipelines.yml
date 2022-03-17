@@ -2,11 +2,14 @@
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 # specific branch build
-# trigger:
-#   branches:
-#     exclude:
-#     - '*'
-trigger: none
+trigger:
+  branches:
+    exclude:
+    - features/*
+    - master
+
+# trigger: none
+
 pr:
 - master
 
