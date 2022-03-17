@@ -5,7 +5,7 @@
 trigger:
   branches:
     exclude:
-    - master
+    - '*'
 pr:
 - master
 
