@@ -26,5 +26,5 @@ stages:
         script: |
           # Write your PowerShell commands here.
           
-          Write-Host "Master build"
+          Write-Host "Master build $(Build.SourceBranch)"
 
